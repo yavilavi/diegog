@@ -1,0 +1,112 @@
+body{
+
+	/*background = gradient + image pattern combo*/
+       
+	background: rgb(44, 43, 43) !important;
+		
+}
+
+.jumbotron{
+    background: #56CCF2 !important;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2) !important;  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2F80ED, #56CCF2) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    text-align: center !important;
+    
+}
+
+.fn{
+    background-color: white !important;
+    padding: 2em !important;
+}
+
+.pn{
+    background-color: white !important;
+    padding: 2em !important;
+    border-radius: 5px !important;
+}
+
+.fl{
+    display: flex;
+  justify-content: space-between;
+  
+}
+
+.nom {
+	width: 530px !important;
+	height: 45px !important;
+	
+}
+
+.app{
+	width: 530px !important;
+	height: 45px !important;
+        
+}
+
+.botones{
+    text-align: center;
+    align-content: center;
+    padding-left: 20px;
+    
+}
+
+.acept{
+     background: #56CCF2 !important;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2) !important;  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2F80ED, #56CCF2) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+height: 35px !important;
+width: 200px !important;
+
+}
+
+.dene{
+     background: #56CCF2 !important;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2) !important;  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2F80ED, #56CCF2) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+height: 35px !important;
+width: 200px !important;
+
+}
+
+.acept:hover{
+    background: #00F260 !important;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0575E6, #00F260) !important;  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0575E6, #00F260) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.dene:hover{
+    background: #cb2d3e !important;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e) !important;  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ef473a, #cb2d3e) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.btndescarga1{
+     margin-top: 7px !important;
+     margin-left: 110px !important;
+    text-decoration: none !important;
+     justify-content: center !important;
+  display: inline-block !important;
+  color: black;
+ margin-left: 340px !important;
+    height: 35px !important;
+width: 420px !important;
+ background: #56CCF2 !important;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2F80ED, #56CCF2) !important;  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2F80ED, #56CCF2) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+border-radius: 5px !important;
+border-color: transparent;
+}
+
+
+
+.btndescarga1:hover{
+    color: white !important;
+    background: #FDC830 !important;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F37335, #FDC830) !important;  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F37335, #FDC830) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+

@@ -1,0 +1,33 @@
+/**pendientes**/
+
+.gestor-pendientes{
+    background-color: deepskyblue;
+    color: white;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th{
+    background-color: #029ac4;
+}
+
+.table-striped>tbody>tr>td{
+    border: none !important;
+    border-color: deepskyblue !important;
+}
+
+
+
+tbody:before{
+    content: "-";
+    display: block;
+    line-height: 2em;
+    color:transparent !important;
+}
+
+.table>thead>tr>th{
+    border: none !important;
+    border-color: deepskyblue !important;
+}
+
+
+

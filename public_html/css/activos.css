@@ -1,0 +1,30 @@
+/**activos**/
+
+.gestor-activos{
+    background-color: #394a66;
+    color: white;
+}
+
+.table-striped>tbody>tr:nth-child(odd)>td,
+.table-striped>tbody>tr:nth-child(odd)>th{
+    background-color: #001019;
+}
+
+.table-striped>tbody>tr>td{
+    border: none !important;
+    border-color: #394a66 !important;
+}
+
+
+
+tbody:before{
+    content: "-";
+    display: block;
+    line-height: 2em;
+    color:transparent !important;
+}
+
+.table>thead>tr>th{
+    border: none !important;
+    border-color: #394a66 !important;
+}
