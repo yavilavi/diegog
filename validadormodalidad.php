@@ -16,7 +16,7 @@ if (isset($_POST['editar_entrada'])) {
     $entrada_recueperada = Inscripcion:: obtenervalidacion(Conexion::obtener_conexion(), $id_entrada);
     $archivos = Inscripcion:: obtenertitulo(Conexion::obtener_conexion(), $id_entrada);
 //    var_dump($archivos);
-    $file = fopen('certificado.pdf', 'w');
+    $file = fopen('certificado.png', 'w');
     var_dump($file);
     fwrite($file, $archivos['imagen']);
 
@@ -169,10 +169,7 @@ if (isset($_POST['editar_entrada'])) {
 
                 <div class="form-group">
 
-                    <a href="" download="<?php
-                    header("Content-type: application/pdf");
-                    echo $archivos['imagen'];
-                    ?>">Archivos</a>
+                    <a href="certificado.png">Archivos</a>
 
 
                 </div>
