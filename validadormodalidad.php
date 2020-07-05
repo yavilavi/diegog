@@ -169,7 +169,7 @@ if (isset($_POST['editar_entrada'])) {
 
                 <div class="form-group">
 
-                    <a href="certificado.png">Archivos</a>
+                    <a href="certificado.png" target="_blank">Archivos</a>
 
 
                 </div>

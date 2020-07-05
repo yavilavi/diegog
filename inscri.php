@@ -43,19 +43,23 @@ if(isset($_POST['g'])){
             , $_POST['nomb'], $_POST['apelli'], $_POST['tipo'], $_POST['documento'],$_POST['ema'],
             $_POST['celular'],$_POST['carrera'],$_POST['modalidad'],$_POST['seminario'],Conexion::obtener_conexion());
     
-     $img=addslashes(file_get_contents($_FILES['file-7']['tmp_name']));
-     $nombreimg=$_FILES['file-7']["name"];
+//     $img=addslashes(file_get_contents($_FILES['file-7']['tmp_name']));
+//     $nombreimg=$_FILES['file-7']["name"];
      $tipodoc=$_FILES['file-7']["type"];
-     
+
+    $fileName = pathinfo($_FILES['file-7']['tmp_name']);
+    $target = 'archivos/';
+    move_uploaded_file( $_FILES['file-7']['tmp_name'], $target);
+    $fileName = $target;
      if($_POST['modalidad']==='Rl' || $_POST['modalidad']==='Ie'){
          $img2=addslashes(file_get_contents($_FILES['filep']['tmp_name']));
      }else{
          $img2=null;
      }
     
-    $vali -> setImagen($img);
+    $vali -> setImagen($fileName);
     $vali -> setCertificado($img2);
-    $vali -> setNombreImagen($nombreimg);
+    $vali -> setNombreImagen($fileName);
     
     if($vali -> registro_valido()){
         $inscri= new Inscripcion('', $vali -> getNombreImagen(), $tipodoc,$vali -> getImagen(), $vali -> getNombre(), $vali -> getApellido(), $vali -> getTipo(),
