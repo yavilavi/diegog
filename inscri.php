@@ -47,10 +47,10 @@ if(isset($_POST['g'])){
 //     $nombreimg=$_FILES['file-7']["name"];
      $tipodoc=$_FILES['file-7']["type"];
 
-    $fileName = pathinfo($_FILES['file-7']['tmp_name']);
+    $fileName = addslashes($_FILES['file-7']['tmp_name']);
     $target = 'archivos/';
     move_uploaded_file( $_FILES['file-7']['tmp_name'], $target);
-    $fileName = $target;
+    $fileName = $target.$fileName;
      if($_POST['modalidad']==='Rl' || $_POST['modalidad']==='Ie'){
          $img2=addslashes(file_get_contents($_FILES['filep']['tmp_name']));
      }else{
