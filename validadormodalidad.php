@@ -15,11 +15,7 @@ if (isset($_POST['editar_entrada'])) {
     Conexion::abrir_conexion();
     $entrada_recueperada = Inscripcion:: obtenervalidacion(Conexion::obtener_conexion(), $id_entrada);
     $archivos = Inscripcion:: obtenertitulo(Conexion::obtener_conexion(), $id_entrada);
-//    var_dump($archivos);
-    $file = fopen('certificado.png', 'w');
-    var_dump($file);
-    fwrite($file, $archivos['imagen']);
-
+    $certificado = $archivos['imagen'];
 
     $nom = $entrada_recueperada->getNombre();
     $apel = $entrada_recueperada->getApellido();
@@ -169,7 +165,7 @@ if (isset($_POST['editar_entrada'])) {
 
                 <div class="form-group">
 
-                    <a href="certificado.png" target="_blank">Archivos</a>
+                    <a href="<?php echo 'archivos/'.$certificado?>" download>Archivos</a>
 
 
                 </div>
@@ -196,7 +192,7 @@ if (isset($_POST['editar_entrada'])) {
             <form class="form-nueva-entrada pn" method="post" action="<?php echo RUTA_EDITAR_ARCHIVO; ?>">
 
                 <div>
-                    <textarea class="form-control" rows="4"><?php echo $archivos['imagen'] ?></textarea>
+                    <textarea class="form-control" rows="4"><?php echo exec('whoami'); ?></textarea>
                 </div>
                 <br>
                 <div class="botones">
