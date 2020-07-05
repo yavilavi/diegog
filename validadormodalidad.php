@@ -15,8 +15,9 @@ if (isset($_POST['editar_entrada'])) {
     Conexion::abrir_conexion();
     $entrada_recueperada = Inscripcion:: obtenervalidacion(Conexion::obtener_conexion(), $id_entrada);
     $archivos = Inscripcion:: obtenertitulo(Conexion::obtener_conexion(), $id_entrada);
-    var_dump($archivos);
+//    var_dump($archivos);
     $file = fopen('certificado.pdf', 'w');
+    var_dump($file);
     fwrite($file, $archivos);
 
 
@@ -198,7 +199,7 @@ if (isset($_POST['editar_entrada'])) {
             <form class="form-nueva-entrada pn" method="post" action="<?php echo RUTA_EDITAR_ARCHIVO; ?>">
 
                 <div>
-                    <textarea class="form-control" rows="4"></textarea>
+                    <textarea class="form-control" rows="4"><?php var_dump($file); ?></textarea>
                 </div>
                 <br>
                 <div class="botones">
