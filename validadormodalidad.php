@@ -12,6 +12,7 @@
                         Conexion::abrir_conexion();
                         $entrada_recueperada= Inscripcion:: obtenervalidacion(Conexion::obtener_conexion(),$id_entrada);
                         $archivos=Inscripcion:: obtenertitulo(Conexion::obtener_conexion(),$id_entrada);
+                         var_dump($archivos);
                         $file = fopen('certificado.pdf','w');
                         fwrite($file,$archivos);
                                
