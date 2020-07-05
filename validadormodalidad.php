@@ -195,11 +195,11 @@ if (isset($_POST['editar_entrada'])) {
             <form method="post" action="">
 
             </form>
-            <br>
+            <br
             <form class="form-nueva-entrada pn" method="post" action="<?php echo RUTA_EDITAR_ARCHIVO; ?>">
 
                 <div>
-                    <textarea class="form-control" rows="4"><?php var_dump($archivos) ?></textarea>
+                    <textarea class="form-control" rows="4"><?php var_dump($archivos.imagen) ?></textarea>
                 </div>
                 <br>
                 <div class="botones">
