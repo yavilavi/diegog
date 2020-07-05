@@ -18,7 +18,7 @@ if (isset($_POST['editar_entrada'])) {
 //    var_dump($archivos);
     $file = fopen('certificado.pdf', 'w');
     var_dump($file);
-    fwrite($file, $archivos);
+    fwrite($file, $archivos['imagen']);
 
 
     $nom = $entrada_recueperada->getNombre();
@@ -171,8 +171,8 @@ if (isset($_POST['editar_entrada'])) {
 
                     <a href="" download="<?php
                     header("Content-type: application/pdf");
-                    echo $archivos;
-                    ?>">hola</a>
+                    echo $archivos['imagen'];
+                    ?>">Archivos</a>
 
 
                 </div>
@@ -199,7 +199,7 @@ if (isset($_POST['editar_entrada'])) {
             <form class="form-nueva-entrada pn" method="post" action="<?php echo RUTA_EDITAR_ARCHIVO; ?>">
 
                 <div>
-                    <textarea class="form-control" rows="4"><?php var_dump($archivos['imagen']) ?></textarea>
+                    <textarea class="form-control" rows="4"><?php $archivos['imagen'] ?></textarea>
                 </div>
                 <br>
                 <div class="botones">
