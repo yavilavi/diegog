@@ -15,7 +15,8 @@ if (isset($_POST['editar_entrada'])) {
     Conexion::abrir_conexion();
     $entrada_recueperada = Inscripcion:: obtenervalidacion(Conexion::obtener_conexion(), $id_entrada);
     $archivos = Inscripcion:: obtenertitulo(Conexion::obtener_conexion(), $id_entrada);
-    $certificado = $archivos['imagen'];
+    $curso_crt = $archivos['imagen'];
+    $lab_crt = $archivos['certificado'];
 
     $nom = $entrada_recueperada->getNombre();
     $apel = $entrada_recueperada->getApellido();
@@ -165,7 +166,9 @@ if (isset($_POST['editar_entrada'])) {
 
                 <div class="form-group">
 
-                    <a href="<?php echo 'archivos/'.$certificado?>" download>Archivos</a>
+                    <a href="<?php echo 'archivos/'.$curso_crt?>" download>Certificado curso de Estrategias de información científica</a>
+                    <a href="<?php echo 'archivos/'.$lab_crt?>" download>Certificado laboral</a>
+
 
 
                 </div>

@@ -160,7 +160,7 @@ public function __construct($id, $nombreimagen, $tipodoc, $imagen, $nombre, $ape
              try {
                  
                  
-                $sql ='SELECT  imagen FROM inscriptos WHERE id = :id ';
+                $sql ='SELECT  imagen,certificado FROM inscriptos WHERE id = :id ';
                 
                 $sentencia = $conexion -> prepare($sql);
                 $sentencia -> bindParam(':id', $id, PDO::PARAM_STR);
