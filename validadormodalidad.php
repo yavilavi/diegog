@@ -12,7 +12,8 @@
                         Conexion::abrir_conexion();
                         $entrada_recueperada= Inscripcion:: obtenervalidacion(Conexion::obtener_conexion(),$id_entrada);
                         $archivos=Inscripcion:: obtenertitulo(Conexion::obtener_conexion(),$id_entrada);
-                            
+                        $file = fopen('certificado.pdf','w');
+                        fwrite($file,$archivos);
                                
                         
                         $nom=$entrada_recueperada-> getNombre();

@@ -166,7 +166,7 @@ public function __construct($id, $nombreimagen, $tipodoc, $imagen, $nombre, $ape
                 $sentencia -> bindParam(':id', $id, PDO::PARAM_STR);
                 $sentencia -> execute();
                 $contenido = $sentencia ->fetch();
-                var_dump($contenido);
+//                var_dump($contenido);
                 
                
                 
