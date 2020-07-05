@@ -15,6 +15,7 @@ include_once 'app/correo.php';
 
 if(isset($_POST['enviar'])){
     Conexion::abrir_conexion();
+    echo 'por aquí pasó';
     $validador = new ValidadorLogin($_POST['correo'], $_POST['password'], Conexion::obtener_conexion());
     if($validador -> obtener_error()=== '' && !is_null($validador  -> obtener_admin())){
         //iniciar sesion

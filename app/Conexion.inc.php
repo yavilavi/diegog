@@ -8,7 +8,7 @@ class Conexion{
         {
             try{
                 include_once 'config.inc.php';
-                $nombre_servidor='localhost';
+                $nombre_servidor='bditm.cqs3azbh70tm.us-east-1.rds.amazonaws.com';
                 $nombre_usuario='id13936821_root';
                 $password='Galeano.1996';
                 $nombre_base_datos='bditm';
