@@ -5,6 +5,9 @@ include_once 'app/repositorioAdmin.inc.php';
 include_once 'app/ValidadorLogin.inc.php';
 include_once 'app/ControlSesion.inc.php';
 include_once 'app/Redireccion.inc.php';
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 
 
